@@ -24,10 +24,6 @@ RUN sed -i 's/magic_quotes_gpc = On/magic_quotes_gpc = Off/g' /etc/php5/*/php.in
 COPY . /var/www/sqlmap/
 WORKDIR /var/www/sqlmap
 
-# Now point the scripts to connect to mysql
-RUN sed -i 's/"localhost"/"mydb"/' /var/www/sqlmap/libs/mysql.inc.php
-RUN sed -i 's/"localhost"/"mydb"/' /var/www/sqlmap/libs/mysql_user.inc.php
-
 # Listen on port 80
 EXPOSE 80
 
