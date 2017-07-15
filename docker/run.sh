@@ -21,7 +21,7 @@ done
 
 
 echo "Create the database"
-mysql -u root -ptestpass -h ${MYSQL_HOST} mysql < /var/www/sqlmap/schema/mysql.sql
+mysql -u root -h ${MYSQL_HOST} < /var/www/sqlmap/schema/mysql.sql
 
 
 echo "Start apache"
