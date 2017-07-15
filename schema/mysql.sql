@@ -10,11 +10,12 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 INSERT INTO `users` (`id`, `user`, `password`) VALUES 
-    (1, 'admin', 'FLAG:{sql-1nj3ct10n-4-l1f3}'),
+    (1, 'john', 'something'),
     (2, 'fluffy', 'bunny'),
     (3, 'wu', 'ming'),
     (4, 'sqlmap/1.0-dev (http://sqlmap.org)', 'user agent header'),
-    (5, NULL, 'nameisnull');
+    (5, NULL, 'nameisnull'),
+    (6, 'admin', 'FLAG:{sql-1nj3ct10n-4-l1f3}');
 
 CREATE TABLE IF NOT EXISTS `international` (
     `id` int(11) NOT NULL,
