@@ -6,13 +6,13 @@ RUN apt-get upgrade -y
 
 # Installing Apache, PHP, git and generic PHP modules
 RUN apt-get install -y apache2 libapache2-mod-php5 git php5-dev php5-gd php-pear \
-                       php5-mysql php5-pgsql php5-sqlite php5-interbase php5-sybase \
-                       php5-odbc unzip make libaio1 bc screen htop git \
+                       php5-mysql \
+                       unzip make libaio1 bc screen htop git \
                        subversion sqlite sqlite3 mysql-client libmysqlclient-dev \
                        netcat
 
 # Configuring Apache and PHP
-RUN rm /var/www/index.html
+# RUN rm /var/www/index.html
 RUN mkdir /var/www/test
 RUN chmod 777 /var/www/test
 RUN a2enmod auth_basic auth_digest
