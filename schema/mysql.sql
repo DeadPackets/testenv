@@ -9,8 +9,8 @@ CREATE TABLE IF NOT EXISTS `users` (
     PRIMARY KEY  (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-INSERT INTO `users` (`id`, `name`, `surname`) VALUES 
-    (1, 'luther', 'blisset'),
+INSERT INTO `users` (`id`, `user`, `password`) VALUES 
+    (1, 'admin', 'FLAG:{sql-1nj3ct10n-4-l1f3}'),
     (2, 'fluffy', 'bunny'),
     (3, 'wu', 'ming'),
     (4, 'sqlmap/1.0-dev (http://sqlmap.org)', 'user agent header'),
