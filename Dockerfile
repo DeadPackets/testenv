@@ -8,7 +8,7 @@ RUN apt-get upgrade -y
 RUN apt-get install -y apache2 libapache2-mod-php5 git php5-dev php5-gd php-pear \
                        php5-mysql \
                        unzip make libaio1 bc screen htop git \
-                       subversion sqlite sqlite3 mysql-client libmysqlclient-dev \
+                       subversion sqlite sqlite3 mysql-client mysql-server libmysqlclient-dev \
                        netcat
 
 # Configuring Apache and PHP
