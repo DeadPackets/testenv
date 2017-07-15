@@ -4,8 +4,8 @@ USE testdb;
 
 CREATE TABLE IF NOT EXISTS `users` (
     `id` int(11) NOT NULL,
-    `name` varchar(500) default NULL,
-    `surname` varchar(1000) default NULL,
+    `user` varchar(500) default NULL,
+    `password` varchar(1000) default NULL,
     PRIMARY KEY  (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
