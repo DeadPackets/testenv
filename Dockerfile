@@ -16,6 +16,7 @@ RUN apt-get install -y apache2 libapache2-mod-php5 git php5-dev php5-gd php-pear
 RUN mkdir /var/www/test
 RUN chmod 777 /var/www/test
 RUN a2enmod auth_basic auth_digest
+RUN php5dismod suhosin
 RUN sed -i 's/AllowOverride None/AllowOverride AuthConfig/' /etc/apache2/sites-enabled/*
 RUN sed -i 's/magic_quotes_gpc = On/magic_quotes_gpc = Off/g' /etc/php5/*/php.ini
 
