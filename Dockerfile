@@ -1,4 +1,4 @@
-FROM debian:6.0.10
+FROM ubuntu:14.04
 
 # Updating base system
 RUN apt-get update
