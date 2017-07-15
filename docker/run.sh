@@ -6,7 +6,7 @@ MYSQL_HOST="localhost"
 MYSQL_PORT="3306"
 
 # Wait for mysql
-service mysql start
+sudo /etc/init.d/mysql start
 
 i=0
 while ! nc ${MYSQL_HOST} ${MYSQL_PORT} >/dev/null 2>&1 < /dev/null; do
