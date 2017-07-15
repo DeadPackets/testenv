@@ -2,7 +2,7 @@
 
 # Wait for database to get available
 MYSQL_LOOPS="20"
-MYSQL_HOST="mydb"
+MYSQL_HOST="localhost"
 MYSQL_PORT="3306"
 
 # Wait for mysql
