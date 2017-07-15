@@ -6,7 +6,7 @@
             error_reporting(E_PARSE);
 
         // Connect to the MySQL database management system
-        $link = mysql_pconnect("localhost", "root", "");
+        $link = mysql_pconnect("localhost", "testuser", "testpass");
         if (!$link) {
             die(mysql_error());
         }
